@@ -11,4 +11,4 @@ WORKDIR /tmp/buxfuse/
 RUN mvn package
 RUN cp target/hello-1.0.war $CATALINA_HOME/webapps/
 EXPOSE 8080
-CMD ["catalina.sh", "run"]
+CMD ["/usr/share/tomcat9/bin/catalina.sh", "run"]
